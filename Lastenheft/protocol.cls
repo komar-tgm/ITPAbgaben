@@ -192,8 +192,8 @@
     	\end{minipage}
     	\hfill
         \begin{minipage}{3.2cm}
-	    	\IfFileExists{images/logo-right.png}{
-	            \includegraphics[width=3.2cm]{images/logo-right.png}}{}
+	    	\IfFileExists{images/storebox.png}{
+	            \includegraphics[width=3.2cm]{images/storebox.png}}{}
 	    \end{minipage}
     	\vfill\fi 	% Fill space between title header and project logo and headings
     \begin{center}
