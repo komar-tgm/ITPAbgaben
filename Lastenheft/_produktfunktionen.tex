@@ -1,15 +1,44 @@
 %!TEX root=../protocol.tex	% Optional
 
 \section{Produktfunktionen}
-\subsection{Benutzer Registrieren, an und abmelden}
+\subsection{Benutzer registrieren, an und abmelden}
 \subsubsection{Benutzer Registrieren (/LF010/)}
 Ein Kunde kann sich auf dem Terminal registrieren. Dafür werden folgende Informationen von ihm benötigt:
 \begin{itemize}
-    \item Benutzername
+    \item E-Mail
+    \item Telefonnummer
+    \item Passwort
+    \item Kundentyp
+    \item Anrede
     \item Vorname
     \item Nachname
-    \item Passwort
-    \item E-Mail Adresse
+    \item Geburtsdatum
+    \item Adresse
 \end{itemize}
-\subsubsection{Benutzer anmelden (/LG020/)}
-Wenn der Kunde bereits registriert ist, kann er sich am Terminal anmelden
+\subsubsection{Benutzer anmelden (/LF020/)}
+Wenn der Kunde registriert ist, kann er sich am Terminal anmelden. Dafür werden folgende Anmeldedaten benötigt:
+\begin{itemize}
+    \item E-Mail oder Benutzername
+    \item Passwort
+\end{itemize}
+Nachdem sich der Kunde angemeldet hat, kann er eine Buchung durchführen.
+\subsubsection{Passwort vergessen (/LF030/)}
+Falls der Kunde sein Passwort vergessen hat, hat er eine Option ein neues Passwort anzufordern.
+Dazu wird die \textbf{E-Mail Adresse} benötigt.
+\subsubsection{Benutzer abmelden}
+Der Benutzer kann sich aus dem Hauptmenü vom Terminal abmelden.
+\subsection{Buchung durchführen}
+% Auswahl der Storage Größe
+% Auswahl der Mietdauer
+% Anzahl der Schwerbelastungsregale und Aufbewahrungsboxen
+% Auswahl des Versicherungsschutzes
+
+% Für die Bezahlung wird benötigt:
+% Zahlungsart (Bankeinzug,Kreditkarte,Diners Club,Paypal oder Rechung) oder mit einem Gutscheincode
+
+% Bankeinzug: IBAN, BIC, Inhaber, Straße, Hausnummer, PLZ, Ort, Land
+% Kreditkarte: Kartennummer, Ablaufdatum, Verifizierungscode
+% Diners Club: Kartennummer, Ablaufdatum, Verifizierungscode
+% Paypal: -
+% Rechung: -
+% Gutscheincode: Code
