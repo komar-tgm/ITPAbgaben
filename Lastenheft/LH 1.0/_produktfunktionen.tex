@@ -1,0 +1,50 @@
+%!TEX root=../protocol.tex	% Optional
+
+\section{Produktfunktionen}
+\subsection{Benutzer registrieren, an und abmelden}
+\subsubsection{Benutzer Registrieren (/LF010/)}
+Ein Kunde kann sich auf dem Terminal registrieren. Dafür werden folgende Informationen von ihm benötigt:
+\begin{itemize}
+    \item E-Mail
+    \item Telefonnummer
+    \item Passwort
+    \item Kundentyp
+    \item Anrede
+    \item Vorname
+    \item Nachname
+    \item Geburtsdatum
+    \item Adresse
+\end{itemize}
+\subsubsection{Benutzer anmelden (/LF020/)}
+Wenn der Kunde registriert ist, kann er sich am Terminal anmelden. Dafür werden folgende Anmeldedaten benötigt:
+\begin{itemize}
+    \item E-Mail oder Benutzername
+    \item Passwort
+\end{itemize}
+Nachdem sich der Kunde angemeldet hat, kann er eine Buchung durchführen.
+\subsubsection{Passwort vergessen (/LF030/)}
+Falls der Kunde sein Passwort vergessen hat, hat er eine Option ein neues Passwort anzufordern.
+Dazu wird die \textbf{E-Mail Adresse} benötigt.
+\subsubsection{Benutzer abmelden}
+Der Benutzer kann sich aus dem Hauptmenü vom Terminal abmelden.
+\subsection{Buchung durchführen}
+Es soll möglich sein am Terminal direkt vor Ort eine Buchung durchzuführen. Dazu muss der Benutzer einen Account haben und angemeldet sein. Für die Buchung sind folgende Informationen wichtig:
+\begin{itemize}
+    \item Auswahl der Storage Größe
+    \item Auswahl der Mietdauer
+    \item Auswahl der Schwerbelastungsregale und Aufbewahrungsboxen
+    \item Auswahl des Versicherungsschutzes
+\end{itemize}
+Für die Bezahlung gibt es verschiedene Möglichkeiten. Je nachdem welche Art der Bezahlung man wählt, müssen dementsprechend auch die Informationen angegeben werden. Die Zahlungsarten sind:
+\begin{itemize}
+    \item Bankeinzug: IBAN, BIC, Inhaber, Straße, Hausnummer, PLZ, Ort, Land
+    \item Kreditkarte: Kartennummer, Ablaufdatum, Verifizierungscode
+    \item Diners Clun: Kartennummer, Ablaufdatum, Verifizierungscode
+    \item PayPal:
+    \item Rechnung:
+    \item Gutscheincode: Code eingeben
+\end{itemize}
+\subsection{Kundensupport kontaktieren}
+Es soll möglich sein, Hilfe und Support aus der Storebox Zentrale anzufordern. Diese werden dann direkt mit einem Supportmitarbeiter verbunden (via VoiceCall oder VideoChat).
+\subsection{Schwarzes Brett anzeigen}
+Es soll möglich sein, auf dem Terminal ein Schwarzes Brett anzeigen zu lassen. Diese zeigt die Kontaktmöglichkeiten an.
